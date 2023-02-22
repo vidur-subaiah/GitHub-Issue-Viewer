@@ -26,7 +26,7 @@ struct IssueDetail: View {
                         .frame(width: 60, height:60)
                         .padding(.top, 50)
                 }
-                Text(issue.title!)
+                Text(issue.title ?? "")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .padding(10)
@@ -34,13 +34,13 @@ struct IssueDetail: View {
                     // Attribution: https://developer.apple.com/documentation/swiftui/asyncimage
                     // Attribution: https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
                     // Attribution: https://stackoverflow.com/questions/71297678/how-to-shape-an-image-into-an-circle
-                    AsyncImage(url: URL(string: issue.user.avatarUrl!)) { image in
+                    AsyncImage(url: URL(string: issue.user.avatarUrl ?? "https://github.com/vidur-subaiah.png")) { image in
                         image.resizable().scaledToFill().clipShape(Circle()).frame(width: 60, height: 60).overlay(Circle().stroke(.black)).padding(10)
                     } placeholder: {
                         ProgressView()
                     }
                     
-                    Text("@" + issue.user.login)
+                    Text("@\(issue.user.login)")
                         .font(.title)
                         .fontWeight(.bold)
                     
@@ -55,7 +55,7 @@ struct IssueDetail: View {
                         Text(formattedDate)
                     }
                     else {
-                        Text(issue.createdAt!)
+                        Text(issue.createdAt ?? "")
                     }
                     
                     Spacer()
@@ -69,12 +69,13 @@ struct IssueDetail: View {
                     .fontWeight(.bold)
                     .underline()
                 
-                Text(issue.body!)
+                Text(issue.body ?? "")
                     .padding(10)
                 
                 Spacer()
             }
         }
+        .toolbarBackground(.visible, for: .navigationBar)
     }
 
 }

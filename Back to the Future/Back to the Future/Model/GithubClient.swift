@@ -13,7 +13,7 @@ class GitHubIssues: ObservableObject {
     @Published var closedIssues: [GitHubIssue] = []
     
     init() {
-        let url = URL(string: "https://api.github.com/repos/apache/hadoop-ozone/issues?state=all")!
+        let url = URL(string: "https://api.github.com/repos/SwiftKickMobile/SwiftMessages/issues?state=all")!
         
         let task = URLSession.shared.dataTask(with: url) { data, _, error in
             
@@ -51,3 +51,4 @@ func formatDate(date: String) -> String? {
     }
 }
 
+// "https://api.github.com/repos/apache/hadoop-ozone/issues?state=all"

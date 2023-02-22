@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03949E2D29A5A6A200F6EAC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03949E2C29A5A6A200F6EAC0 /* LaunchScreen.storyboard */; };
 		03E09F2B29A5475200E3F968 /* Back_to_the_FutureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E09F2A29A5475200E3F968 /* Back_to_the_FutureApp.swift */; };
 		03E09F2D29A5475200E3F968 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E09F2C29A5475200E3F968 /* ContentView.swift */; };
 		03E09F2F29A5475500E3F968 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E09F2E29A5475500E3F968 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03949E2C29A5A6A200F6EAC0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03E09F2729A5475200E3F968 /* Back to the Future.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Back to the Future.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E09F2A29A5475200E3F968 /* Back_to_the_FutureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Back_to_the_FutureApp.swift; sourceTree = "<group>"; };
 		03E09F2C29A5475200E3F968 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				03E09F3F29A57F9D00E3F968 /* Views */,
 				03E09F2E29A5475500E3F968 /* Assets.xcassets */,
 				03E09F3029A5475500E3F968 /* Preview Content */,
+				03949E2C29A5A6A200F6EAC0 /* LaunchScreen.storyboard */,
 			);
 			path = "Back to the Future";
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03949E2D29A5A6A200F6EAC0 /* LaunchScreen.storyboard in Resources */,
 				03E09F3229A5475500E3F968 /* Preview Assets.xcassets in Resources */,
 				03E09F2F29A5475500E3F968 /* Assets.xcassets in Resources */,
 			);
@@ -302,10 +306,11 @@
 				DEVELOPMENT_TEAM = V2D9K4FP25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Back to the Future";
+				INFOPLIST_KEY_CFBundleDisplayName = "Back 2 D Future";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,10 +340,11 @@
 				DEVELOPMENT_TEAM = V2D9K4FP25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Back to the Future";
+				INFOPLIST_KEY_CFBundleDisplayName = "Back 2 D Future";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

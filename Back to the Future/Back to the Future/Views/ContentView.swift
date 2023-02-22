@@ -24,7 +24,7 @@ struct ContentView: View {
             .tabItem { Label("Closed", systemImage: "checkmark.circle.fill")  }.tag(2)
 
         }
-        .accentColor(Color.black)
+        .accentColor(Color.orange)
     }
 }
 

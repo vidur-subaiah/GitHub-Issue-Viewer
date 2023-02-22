@@ -28,13 +28,14 @@ struct IssueTabView: View {
                                 
                         }
                     }
+                    .navigationBarTitle("Open Issues", displayMode: .large)
+                    .toolbarBackground(Color.red, for: .navigationBar)
+                    .toolbarBackground(.visible, for: .navigationBar)
+                    
+                    // Attribution: https://sarunw.com/posts/swiftui-navigation-bar-color/
                 }
             }
-            .navigationBarTitle("Open Issues", displayMode: .large)
-            .toolbarBackground(Color.red, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
             
-            // Attribution: https://sarunw.com/posts/swiftui-navigation-bar-color/
         }
         else {
             NavigationView {
@@ -52,11 +53,11 @@ struct IssueTabView: View {
                                 
                         }
                     }
+                    .navigationBarTitle("Closed Issues", displayMode: .large)
+                    .toolbarBackground(Color.green, for: .navigationBar)
+                    .toolbarBackground(.visible, for: .navigationBar)
                 }
             }
-            .navigationBarTitle("Closed Issues", displayMode: .large)
-            .toolbarBackground(Color.green, for: .navigationBar)
-            .toolbarBackground(.visible, for: .navigationBar)
         }
     }
 }
