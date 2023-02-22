@@ -14,7 +14,7 @@ struct GitHubUser: Codable {
 
 struct GitHubIssue: Codable, Identifiable {
     let title: String?
-    // We can use GitHub to conformt to `Identifiable`
+    // We can use GitHub to conform to `Identifiable`
     let id: UInt32?
     let createdAt: String?
     let body: String?

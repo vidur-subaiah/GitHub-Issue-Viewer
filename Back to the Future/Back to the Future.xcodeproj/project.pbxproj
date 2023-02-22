@@ -13,6 +13,8 @@
 		03E09F3229A5475500E3F968 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E09F3129A5475500E3F968 /* Preview Assets.xcassets */; };
 		03E09F3B29A548D000E3F968 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E09F3929A548D000E3F968 /* Models.swift */; };
 		03E09F3C29A548D000E3F968 /* GithubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E09F3A29A548D000E3F968 /* GithubClient.swift */; };
+		03E09F3E29A57F9100E3F968 /* IssueTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E09F3D29A57F9100E3F968 /* IssueTabView.swift */; };
+		03E09F4129A5849000E3F968 /* IssueDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E09F4029A5849000E3F968 /* IssueDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		03E09F3129A5475500E3F968 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		03E09F3929A548D000E3F968 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		03E09F3A29A548D000E3F968 /* GithubClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GithubClient.swift; sourceTree = "<group>"; };
+		03E09F3D29A57F9100E3F968 /* IssueTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTabView.swift; sourceTree = "<group>"; };
+		03E09F4029A5849000E3F968 /* IssueDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				03E09F2A29A5475200E3F968 /* Back_to_the_FutureApp.swift */,
-				03E09F2C29A5475200E3F968 /* ContentView.swift */,
-				03E09F2E29A5475500E3F968 /* Assets.xcassets */,
 				03E09F3829A548D000E3F968 /* Model */,
+				03E09F3F29A57F9D00E3F968 /* Views */,
+				03E09F2E29A5475500E3F968 /* Assets.xcassets */,
 				03E09F3029A5475500E3F968 /* Preview Content */,
 			);
 			path = "Back to the Future";
@@ -79,6 +83,16 @@
 				03E09F3A29A548D000E3F968 /* GithubClient.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		03E09F3F29A57F9D00E3F968 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03E09F2C29A5475200E3F968 /* ContentView.swift */,
+				03E09F3D29A57F9100E3F968 /* IssueTabView.swift */,
+				03E09F4029A5849000E3F968 /* IssueDetail.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +168,8 @@
 				03E09F3B29A548D000E3F968 /* Models.swift in Sources */,
 				03E09F2D29A5475200E3F968 /* ContentView.swift in Sources */,
 				03E09F2B29A5475200E3F968 /* Back_to_the_FutureApp.swift in Sources */,
+				03E09F3E29A57F9100E3F968 /* IssueTabView.swift in Sources */,
+				03E09F4129A5849000E3F968 /* IssueDetail.swift in Sources */,
 				03E09F3C29A548D000E3F968 /* GithubClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +302,7 @@
 				DEVELOPMENT_TEAM = V2D9K4FP25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Back to the Future";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,9 +315,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Back-to-the-Future";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,6 +335,7 @@
 				DEVELOPMENT_TEAM = V2D9K4FP25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Back to the Future";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -327,9 +348,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Back-to-the-Future";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
